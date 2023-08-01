@@ -1,3 +1,4 @@
 import "./styles/main.css";
+import fetchData from "./functions/fetchData";
 
-console.log("hello");
+fetchData();

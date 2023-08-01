@@ -10,6 +10,7 @@
   },
   "rules": {
     "import/no-extraneous-dependencies": "off",
-    "no-plusplus": "off"
+    "no-plusplus": "off",
+    "no-console": "off"
   }
 }
