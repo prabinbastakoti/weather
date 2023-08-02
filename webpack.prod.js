@@ -19,7 +19,7 @@ module.exports = merge(common, {
       new CssMinimizerPlugin(),
       new TerserPlugin(),
       new HtmlWebpackPlugin({
-        title: "Weather",
+        title: "WeatherToday",
         template: "src/index.html",
         minify: {
           removeAttributeQuotes: true,

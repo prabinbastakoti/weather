@@ -20,7 +20,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Weather",
+      title: "WeatherToday",
       template: "src/index.html",
     }),
   ],
