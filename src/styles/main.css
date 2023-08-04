@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+*::after,
+*::before,
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body,
 html {
   height: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -72,6 +74,7 @@ main {
   width: 100%;
 }
 
+/* MAIN TOP SECTION */
 main .topSection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -111,6 +114,7 @@ main .topSection .thirdColumn {
   line-height: 2rem;
 }
 
+/* MIDSECTION SEARCHBAR */
 main .midSection {
   display: flex;
   flex-direction: column;
@@ -161,19 +165,58 @@ input[type="search"]::-webkit-search-results-decoration {
   visibility: visible;
 }
 
+/* BOTTOM CAROUSAL */
 main .bottomSection {
   width: 100%;
   height: 360px;
-  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  padding: 0 5%;
 }
 
+main .bottomSection .hourWeather {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  color: white;
+}
+
+main .bottomSection .carousal {
+  opacity: 0;
+  display: none;
+}
+
+main .bottomSection .carousal[data-active] {
+  opacity: 1;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+main .bottomSection img[class="carousalArrow"] {
+  width: 60px;
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 15px;
+}
+
+main .bottomSection img[class="carousalArrow"]:hover {
+  transform: scale(1.02);
+}
+
+/* FOOTER SECTION */
 footer .copyrightSection {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   letter-spacing: 1px;
-  /* font-weight: bold; */
   font-size: 0.9rem;
 }
 
