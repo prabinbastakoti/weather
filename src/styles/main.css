@@ -12,6 +12,7 @@ body,
 html {
   height: 100%;
   font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
 }
 
 .container {
@@ -28,21 +29,11 @@ html {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 2.5% 9%;
+  padding: 1.5% 5%;
   padding-left: 12%;
   width: 100%;
-}
-
-.header h1 {
-  flex: 1;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 3.5rem;
-  letter-spacing: 3px;
-  font-weight: bolder;
-  color: white;
 }
 
 .changeUnit button {
@@ -72,6 +63,8 @@ html {
 
 main {
   width: 100%;
+  flex: 1;
+  margin-top: 1.5%;
 }
 
 /* MAIN TOP SECTION */
@@ -90,12 +83,13 @@ main .topSection .firstColumn {
 
 main .topSection .firstColumn h1 {
   font-weight: bolder;
-  font-size: 2.7rem;
+  font-size: 3rem;
+  letter-spacing: 2px;
 }
 
 main .topSection .firstColumn h4 {
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 2px;
 }
 main .topSection .firstColumn .sunriseSunset {
@@ -112,13 +106,47 @@ main .topSection .secondColumn {
   line-height: 2rem;
 }
 
+main .topSection .secondColumn .condition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  letter-spacing: 1px;
+}
+
+main .topSection .secondColumn .condition #currentTemp {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+main .topSection .secondColumn .condition img#currentConditionIcon {
+  width: 140px;
+}
+
+#currentConditionText {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+
+.maxMinTemp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
 main .topSection .thirdColumn {
   text-align: right;
   padding-right: 15%;
   color: white;
   font-weight: bold;
-  letter-spacing: 1px;
-  line-height: 2rem;
+  letter-spacing: 2px;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
 }
 
 /* MIDSECTION SEARCHBAR */
@@ -127,7 +155,7 @@ main .midSection {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 3%;
+  margin-top: 6%;
 }
 
 main .midSection .searchbar {
@@ -135,21 +163,21 @@ main .midSection .searchbar {
 }
 
 main .midSection input[id="searchBar"] {
-  padding: 10px 60px;
+  padding: 0px 50px 0px 80px;
   outline: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
-  width: 600px;
-  height: 50px;
+  width: 650px;
+  height: 60px;
   border: none;
   border-radius: 32px;
 }
 
 main .midSection img[id="searchIcon"] {
-  width: 16px;
+  width: 20px;
   position: absolute;
-  top: 17.5px;
-  left: 20px;
+  top: 20px;
+  left: 27px;
 }
 
 input[type="search"]::-webkit-search-decoration,
@@ -236,4 +264,14 @@ footer .weatherAPIPlug .text a {
 
 footer .weatherAPIPlug .image img {
   width: 60px;
+}
+
+#forecastHour,
+#forecastHourTemp {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+img#forecastConditionIcon {
+  width: 80px;
 }
