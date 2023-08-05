@@ -94,7 +94,14 @@ main .topSection .firstColumn h1 {
 }
 
 main .topSection .firstColumn h4 {
+  margin-top: 10px;
   font-size: 1rem;
+  letter-spacing: 2px;
+}
+main .topSection .firstColumn .sunriseSunset {
+  display: flex;
+  margin-top: 10px;
+  gap: 20px;
 }
 
 main .topSection .secondColumn {
@@ -211,31 +218,20 @@ main .bottomSection img[class="carousalArrow"]:hover {
 }
 
 /* FOOTER SECTION */
-footer .copyrightSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  letter-spacing: 1px;
-  font-size: 0.9rem;
-}
-
-footer .copyrightSection .githubLogo img {
-  width: 22px;
-}
 
 footer .weatherAPIPlug {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   letter-spacing: 1px;
+  color: white;
 }
 
 footer .weatherAPIPlug .text a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 footer .weatherAPIPlug .image img {

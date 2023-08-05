@@ -1,14 +1,17 @@
 import searchIcon from "../assets/search.png";
-import githubLogo from "../assets/github.png";
 import leftArrowIcon from "../assets/left-arrow.png";
 import rightArrowIcon from "../assets/right-arrow.png";
+import favicon from "../assets/cloudy.png";
 
 const homepage = () => {
+  const faviconImage = document.createElement("link");
+  faviconImage.rel = "icon";
+  faviconImage.href = favicon;
+
+  document.head.appendChild(faviconImage);
+
   const icon = document.querySelector("#searchIcon");
   icon.src = searchIcon;
-
-  const githubLogoElement = document.querySelector("#githubLogo");
-  githubLogoElement.src = githubLogo;
 
   const leftArrow = document.querySelector("img#leftArrow");
   leftArrow.src = leftArrowIcon;

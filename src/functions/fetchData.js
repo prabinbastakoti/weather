@@ -1,4 +1,4 @@
-const getWeather = (data) => data;
+import populateDOM from "./populateDOM";
 
 const fetchData = async (location) => {
   const response = await fetch(
@@ -20,10 +20,9 @@ const fetchData = async (location) => {
       currentData,
       forecast,
     };
-
-    getWeather(data);
+    populateDOM(data);
   } catch (error) {
-    console.log("Please use a valid address, zipcode or country name", error);
+    console.log("Something Unexpected Happened!!", error);
   }
 };
 

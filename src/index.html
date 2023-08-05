@@ -18,28 +18,33 @@
       <main>
         <div class="topSection">
           <div class="firstColumn">
-            <h1>Name, Country</h1>
-            <h4>Date Time</h4>
-            <span>Sunrise: <span>5am</span></span>
-            <span>Sunset: <span>6pm</span></span>
+            <h1>
+              <span id="placeName"></span>,
+              <span id="countryName"></span>
+            </h1>
+            <h4 id="localTime"></h4>
+            <div class="sunriseSunset">
+              <h4>Sunrise: <span id="sunrise"></span></h4>
+              <h4>Sunset: <span id="sunset"></span></h4>
+            </div>
           </div>
           <div class="secondColumn">
             <div class="condition">
-              <span>condition icon</span>
-              <span>Current Temp</span>
+              <img src="" id="currentConditionIcon" />
+              <span id="currentTemp"></span>
             </div>
-            <div class="conditionText">Partially Rain Expected</div>
+            <div id="currentConditionText"></div>
             <div class="maxMinTemp">
-              <span>H: <span>Max Temp</span></span>
-              <span>L: <span>Min Temp</span></span>
+              <span>H: <span id="maxTemp"></span></span>
+              <span>L: <span id="minTemp"></span></span>
             </div>
           </div>
           <div class="thirdColumn">
-            <div class="feelsLike">Feels like <span>40&deg;C</span></div>
-            <div class="wind">Wind: <span>5 KMPH</span></div>
-            <div class="humidity">Humidity: <span>83%</span></div>
-            <div class="precipitaion">Precipitation: <span>90%</span></div>
-            <div class="visibility">Visibility: <span>21 KM</span></div>
+            <div>Feels like <span id="feelsLike"></span></div>
+            <div>Wind: <span id="wind"></span></div>
+            <div>Humidity: <span id="humidity"></span></div>
+            <div>Precipitation: <span id="precipitation"></span></div>
+            <div>Visibility: <span id="visibility"></span></div>
           </div>
         </div>
         <div class="midSection">
@@ -64,82 +69,154 @@
           </div>
           <div class="carousal" data-active>
             <div class="hourWeather hour0">
-              <span>0</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour1">
-              <span>1</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour2">
-              <span>2</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour3">
-              <span>3</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour4">
-              <span>4</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour5">
-              <span>5</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
           </div>
           <div class="carousal">
             <div class="hourWeather hour6">
-              <span>6</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour7">
-              <span>7</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour8">
-              <span>8</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour9">
-              <span>9</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour10">
-              <span>10</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour11">
-              <span>11</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
           </div>
           <div class="carousal">
             <div class="hourWeather hour12">
-              <span>12</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour13">
-              <span>13</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour14">
-              <span>14</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour15">
-              <span>15</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour16">
-              <span>16</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour17">
-              <span>17</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
           </div>
           <div class="carousal">
             <div class="hourWeather hour18">
-              <span>18</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour19">
-              <span>19</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour20">
-              <span>20</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour21">
-              <span>21</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour22">
-              <span>22</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
             <div class="hourWeather hour23">
-              <span>23</span><span>conditionIcon</span><span>HourTemp</span>
+              <span id="forecastHour"></span
+              ><img id="forecastConditionIcon" /><span
+                id="forecastHourTemp"
+              ></span>
             </div>
           </div>
           <div class="rightArrow">
@@ -153,16 +230,6 @@
         </div>
       </main>
       <footer>
-        <div class="copyrightSection">
-          <div class="copyrightText">
-            COPYRIGHT &copy; 2023. ALL RIGHTS RESERVED.
-          </div>
-          <div class="githubLogo">
-            <a href="https://github.com/prabinbastakoti"
-              ><img src="" id="githubLogo"
-            /></a>
-          </div>
-        </div>
         <div class="weatherAPIPlug">
           <div class="text">
             Powered by
