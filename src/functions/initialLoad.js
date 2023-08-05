@@ -1,9 +1,8 @@
 import homepage from "../pages/homepage";
 import fetchData from "./fetchData";
 
-const initialLoad = () => {
-  const currenLocation = "Bharatpur-Nepal";
-  fetchData(currenLocation);
+const initialLoad = (currentLocation) => {
+  fetchData(currentLocation);
   homepage();
 };
 

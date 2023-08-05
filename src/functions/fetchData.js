@@ -21,8 +21,11 @@ const fetchData = async (location) => {
       forecast,
     };
     populateDOM(data);
+    const errorMsg = document.querySelector(".error-msg");
+    errorMsg.classList.remove("active");
   } catch (error) {
-    console.log("Something Unexpected Happened!!", error);
+    const errorMsg = document.querySelector(".error-msg");
+    errorMsg.classList.add("active");
   }
 };
 
